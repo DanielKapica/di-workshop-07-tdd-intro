@@ -53,4 +53,35 @@ describe('Coolculator', function () {
     result = mm.square(4)
     expect(result).to.equal(16)
   })
+
+  // Returning Raise of the first number to the power of the second number
+  it('should raise the first number to the power of the second', function(){
+    result = mm.raise(2,2)
+    expect(result).to.equal(4)
+  })
+
+  // Returning True if negative number, or False if positive number
+  it('should return true if negative number', function(){
+    result = mm.isNegative(-12)
+    expect(result).to.equal(true)
+  })
+
+  // Returning True if positive number, or False if negative number
+  it('should return true if positive number', function(){
+    result = mm.isPositive(12)
+    expect(result).to.equal(true)
+  })
+
+  // Returning True if cool number, or False if not cool number
+  it('should return true if cool number', function(){
+    result = mm.isCool(1223421)
+    expect(result).to.equal(true)
+  })
+
+  // Returning sum of an array with numbers
+  it('should return sum of an array of numbers', function(){
+    result = mm.sumArray([1,1,1,1,1])
+    expect(result).to.equal(5)
+  })
+  
 })
