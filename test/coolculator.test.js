@@ -95,9 +95,18 @@ describe('Coolculator', function () {
     result = mm.mean([1,2,3,4,5])
     expect(result).to.equal(3)
   })
+
   // Returning factorial of the number
   it('should return factorial of the number', function(){
     result = mm.factorial(5)
     expect(result).to.equal(120)
+  })
+
+  // Random number generator
+  it('should return random number between 0 and the value', function(){
+    result = mm.random(0, 5)
+    expect(result).to.satisfy(function(s){
+    return result.typeOf="integer" && result >= 0 <= 5 
+    });
   })
 })
