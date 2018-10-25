@@ -83,5 +83,21 @@ describe('Coolculator', function () {
     result = mm.sumArray([1,1,1,1,1])
     expect(result).to.equal(5)
   })
-  
+
+  // Returning multiply of numbers in an array 
+  it('should return multiply of numbers in an array', function(){
+    result = mm.multiplyArray([1,2,3,4,5])
+    expect(result).to.equal(120)
+  })
+
+  // Returning mean of the numbers in an array
+  it('should return mean of numbers in an array', function(){
+    result = mm.mean([1,2,3,4,5])
+    expect(result).to.equal(3)
+  })
+  // Returning factorial of the number
+  it('should return factorial of the number', function(){
+    result = mm.factorial(5)
+    expect(result).to.equal(120)
+  })
 })
